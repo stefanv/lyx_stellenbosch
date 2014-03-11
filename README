@@ -1,0 +1,87 @@
+US LyX README
+=============
+
+This package contains the LyX layout and template files for Danie Els's
+Stellenbosch Thesis bundle.  To use it, you must first install LyX:
+
+  http://www.lyx.org
+
+If you are using a pre-packaged TeX distribution such as TeX Live,
+MikTeX, or any of the Linux distributions, the `usthesis` package can
+be installed via the package manager.
+
+Otherwise, proceed as follows:
+
+0) Download usthesis:
+
+  http://www.ctan.org/tex-archive/help/Catalogue/entries/stellenbosch.html
+
+1) Place usthesis.lyx in
+
+  $HOME/.lyx/templates/
+
+e.g. /home/johnd/.lyx/templates or
+     c:\Documents and Settings\John Doe\.lyx\templates
+
+2) Place usthesis.layout in
+
+  $HOME/.lyx/layouts/
+
+3) Do Edit -> Reconfigure in LyX
+   (Tools -> Reconfigure in LyX 1.4)
+
+4) Open usthesis.lyx and customise.
+  - General (Layout -> Document -> Layout)
+  - Bibliography (Right-click on BiBTeX Generated References)
+  - SI Style, extra packages (Layout -> Document -> Preamble)
+
+Open the included template (usthesis.lyx) to see how the different
+styles are used.
+
+Take note of these styles
+-------------------------
+
+* FrontChapter
+    Unnumbered chapter inserted before main part of document.
+
+* MainMatter
+    Seperates front and main document content.
+
+* Definition
+    Spaced list of definitions useful for symbols/abbreviations.
+
+* Appendix
+    Appendix chapter with alphabetical page numbering.
+
+
+Styles requiring special attention
+----------------------------------
+
+Requires parameter:
+* Author
+* Degree
+* Date
+
+More than one name separated by TeX "\and":
+* Studyleader
+
+Empty:
+* Copyright
+* Declaration
+
+Both needed:
+* Abstract
+* Samevatting
+
+Quirks
+------
+When compiling to dvi, you may see a vertical page offset.  Use
+pdflatex instead.
+
+Contact
+-------
+Stefan van der Walt <usthesis@mentat.za.net>
+
+Contributors
+------------
+Francois Cilliers <fcilliers@gmail.com>

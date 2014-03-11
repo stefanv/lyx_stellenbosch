@@ -1,0 +1,373 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass usthesis
+\options a4paper,openany,masters-t,afrikaans,english
+\use_default_options false
+\maintain_unincluded_children false
+\language british
+\language_package default
+\inputencoding default
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 0
+\use_mhchem 0
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Title of Thesis
+\end_layout
+
+\begin_layout Author
+F.N.
+ Surname
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+Full Name Surname
+\end_layout
+
+\begin_layout Degree
+MSc<Discipline> (...)
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+Master of <What You Do>
+\end_layout
+
+\begin_layout Address
+Department of <your department and faculty>
+\begin_inset Newline newline
+\end_inset
+
+University of Stellenbosch
+\begin_inset Newline newline
+\end_inset
+
+Private Bag X1, 7602 Matieland, South Africa
+\end_layout
+
+\begin_layout Date
+12
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+2004
+\end_layout
+
+\begin_layout Studyleader
+First Adviser 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+and
+\end_layout
+
+\end_inset
+
+ Second Adviser 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+and
+\end_layout
+
+\end_inset
+
+ Another One
+\end_layout
+
+\begin_layout Copyright
+
+\end_layout
+
+\begin_layout Declaration
+
+\end_layout
+
+\begin_layout Abstract
+Summary of the document in English.
+\end_layout
+
+\begin_layout Samevatting
+Opsomming van die dokument in Afrikaans.
+\end_layout
+
+\begin_layout FrontChapter
+Acknowledgements
+\end_layout
+
+\begin_layout Standard
+Bedankings.
+\end_layout
+
+\begin_layout FrontChapter
+Dedications
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+Dedications go here.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+vfill
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout FrontChapter
+List of Abbreviations
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+TLA Three Letter Acronym
+\end_layout
+
+\begin_layout FrontChapter
+List of Symbols
+\end_layout
+
+\begin_layout Subsubsection
+Constants:
+\end_layout
+
+\begin_layout Definition
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\pi=$
+\end_inset
+
+ 3.1415926535897932384626433832795
+\end_layout
+
+\begin_layout Definition
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\mathrm{e}=$
+\end_inset
+
+ 2.7182818284590452353602874713526
+\end_layout
+
+\begin_layout Subsubsection
+Vectors
+\begin_inset space ~
+\end_inset
+
+and
+\begin_inset space ~
+\end_inset
+
+Matrices:
+\end_layout
+
+\begin_layout Definition
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\bar{v}$
+\end_inset
+
+ Vector
+\end_layout
+
+\begin_layout Definition
+\labelwidthstring 00.00.0000
+\begin_inset Formula $I$
+\end_inset
+
+ Identity matrix
+\end_layout
+
+\begin_layout Mainmatter
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset index_print
+LatexCommand printindex
+type "idx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Title of First Chapter
+\end_layout
+
+\begin_layout Standard
+This is the first chapter of the thesis.
+ Citing a reference such as 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "vanderwalt2010"
+
+\end_inset
+
+ will add it to the bibliography.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "citations"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Appendix
+\start_of_appendix
+First Appendix
+\end_layout
+
+\begin_layout Appendix
+Second Appendix
+\end_layout
+
+\end_body
+\end_document

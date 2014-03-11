@@ -1,0 +1,279 @@
+#% Do not delete the line below; configure depends on this
+#  \DeclareLaTeXClass[usthesis]{thesis (Stellenbosch)}
+# For the University of Stellenbosch thesis style by Danie Els
+# Author: Stéfan van der Walt <stefan@sun.ac.za>
+
+Input stdclass.inc
+
+Sides                   1
+PageStyle               Headings
+TitleLatexName          "frontmatter\TitlePage"
+
+Preamble
+  \usepackage{color}
+     \definecolor{USmaroon}{rgb}{0.375,0.1328,0.2305}
+     \definecolor{USgray}{rgb}{0.5469,0.5895,0.6016}
+  \usepackage{graphicx}
+  \usepackage{usbib}
+EndPreamble
+
+ClassOptions
+  FontSize              10|11|12
+  Other			"a4paper,openany,masters-t,afrikaans,UKenglish"
+End
+
+DefaultFont
+  Family		Roman
+  Series		Medium
+  Shape			Up
+  Size			Normal
+  Color			None
+EndFont
+
+# Afrikaans style definition
+Style Afrikaans
+  Margin                Static
+  LatexType             Environment
+  LatexName             Afr
+  ParIndent		MM
+  ParSkip               0.4
+  Align                 Left
+  AlignPossible         Block, Left, Right, Center
+  LabelType             No_Label
+
+  Font
+    Color           blue
+  EndFont
+End
+
+# English style definition
+Style English
+  Margin                Static
+  LatexType             Environment
+  LatexName             Eng
+  ParIndent		MM
+  ParSkip               0.4
+  Align                 Left
+  AlignPossible         Block, Left, Right, Center
+  LabelType             No_Label
+
+  Font
+    Color           magenta
+  EndFont
+End
+
+Style Author
+  Margin		Static
+  LatexType		Command
+  InTitle		1
+  LatexName		author
+  LabelSep		xxx
+  ParSkip		0.4
+  TopSep		1.3
+  BottomSep		0.7
+  ParSep		0.7
+  Align			Center
+  AlignPossible		Center
+  LabelType		No_Label
+
+  # standard font definition
+  Font
+    Size		Large
+  EndFont
+
+  OptionalArgs          1
+
+End
+
+Style Degree
+  CopyStyle         Author
+  LabelType         Static
+  LabelString       "Degree:"
+  LatexName         degree
+  Margin            Static
+  LeftMargin        MMMMM
+  LatexType         Command
+  Align             Center
+  AlignPossible     Center
+
+  LabelFont
+    Color           Blue
+  EndFont
+End
+
+Style Address
+  LabelType         No_Label
+  LatexName         address
+  LatexType         Command
+  InTitle           1
+  Align             Center
+  AlignPossible     Center
+  BottomSep         0.4
+
+  Font
+    Shape          Slanted
+  EndFont
+
+  PreAmble
+  EndPreamble
+End
+
+Style Studyleader
+  CopyStyle         Author
+  LatexName         studyleader
+  LatexType         Command
+  LabelType         Top_Environment
+  LabelString       "Advisor(s):"
+  Margin            First_Dynamic
+  Align             Center
+  AlignPossible     Center
+  TopSep            0.3
+
+  LabelFont
+    Color           Blue
+  EndFont
+End
+
+Style Date
+  LatexName             setdate
+  LabelType             Static
+  LabelString           "Date: "
+  LabelFont
+    Color               blue
+  EndFont
+End
+
+Style Declaration
+  KeepEmpty         1
+  LatexType         Command
+  LatexName         DeclarationPage{}\newpage{}
+  Margin            First_Dynamic
+  Align             Center
+  AlignPossible     Center
+  LabelType         Static
+  LabelString       "-Declaration Page-"
+  LeftMargin        MMMMM
+  TopSep            1.5
+  BottomSep         1.2
+
+  LabelFont
+    Family          Roman
+    Series          Bold
+    Size            Largest
+    Color           Latex
+  EndFont
+End
+
+Style Copyright
+  KeepEmpty         1
+  CopyStyle         Declaration
+  LatexName         CopyrightPage{}\newpage{}
+  LabelString       "-Copyright Page-"
+End
+
+Style Mainmatter
+  KeepEmpty         1
+  CopyStyle         Declaration
+  LatexName         mainmatter
+  LabelString       "-Main-"
+End
+
+Style Samevatting
+  CopyStyle         Abstract
+  LatexParam        [afrikaans]
+  LabelString       "Samevatting"
+End
+
+Style FrontChapter
+  CopyStyle         Chapter*
+  LatexName         chapter
+  TopSep            1.5
+End
+
+Style Definition
+  Margin		Manual
+  LatexType		List_Environment
+  LatexName		listofsymbols
+  LabelType		Manual
+  LabelString		00.00.0000
+  LabelSep		xxx
+  NextNoindent		1
+  ParSkip		0.4
+  TopSep		0.7
+  BottomSep		0.7
+  ParSep		0.5
+  Align			Block
+  AlignPossible		Block, Left
+
+  Preamble
+    \newenvironment{listofsymbols}[1]%<- Nomenclature list environment
+       {\list{}{%
+          \setlength{\labelwidth}{2em}%
+          \setlength{\labelsep}{1em}%
+          \setlength{\itemindent}{0pt}%
+          \setlength{\leftmargin}{\labelwidth+\labelsep-\itemindent+1em}%
+          \setlength{\listparindent}{\parindent}%
+          \setlength{\itemsep}{\smallskipamount}%
+          \setlength{\parsep}{\parskip}%
+          \renewcommand\makelabel[1]{##1\hfil}}%
+      }{\endlist}
+  EndPreamble
+End
+
+
+Style Bibliography
+  TopSep		1
+  LabelString		Bibliography
+  # label font definition
+  LabelFont
+    Series		Bold
+    Size		Huge
+  EndFont
+End
+
+Style Appendix
+  Margin                Static
+  LatexType             Command
+  LatexName             usappendix
+  NeedProtect           1
+  NextNoIndent          1
+  ParSkip               0.4
+  TopSep                4
+  BottomSep             0.8
+  ParSep                0.8
+  Align                 Block
+  AlignPossible         Block, Left
+  LabelType             Counter_Chapter
+  LabelString           "Chapter "
+  LabelStringAppendix   "Appendix "
+  OptionalArgs                          1
+
+  # standard font definition
+  Font
+    Series              Bold
+    Size                Huge
+  EndFont
+
+  Preamble
+    \newcommand\usappendix[1]{
+      \clearpage
+      \setcounter{page}{1}
+      \renewcommand{\thepage}{\thechapter-\arabic{page}}
+      \chapter{#1}
+    }
+  EndPreamble
+
+End
+
+# Numbering Algorithm floats within chapters
+# (from http://home.caltech.edu/ling/tips/cit_thesis.html)
+Float
+  Type          algorithm
+  GuiName       Algorithm
+  Placement     tbp
+  Extension     loa
+  NumberWithin  chapter
+  Style         ruled
+  ListName      "List of Algorithms"
+  LaTeXBuiltin  false
+End
