@@ -2,7 +2,11 @@ US LyX README
 =============
 
 This package contains the LyX layout and template files for Danie Els's
-Stellenbosch Thesis bundle.  To use it, you must first install LyX:
+Stellenbosch Thesis bundle, which can be found at:
+
+ http://www.ctan.org/tex-archive/macros/latex/contrib/stellenbosch
+
+To use it, you must first install LyX:
 
   http://www.lyx.org
 
