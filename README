@@ -14,7 +14,12 @@ If you are using a pre-packaged TeX distribution such as TeX Live,
 MikTeX, or any of the Linux distributions, the `usthesis` package can
 be installed via the package manager.
 
-Otherwise, proceed as follows:
+Installation: Debian / Ubuntu
+-----------------------------
+- Required packages: texlive-publishers, texlive-lang-dutch
+
+Installation: Other systems
+---------------------------
 
 0) Download usthesis:
 
