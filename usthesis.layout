@@ -101,6 +101,22 @@ Style Degree
   EndFont
 End
 
+Style Faculty
+  CopyStyle         Author
+  LabelType         Static
+  LabelString       "Faculty:"
+  LatexName         faculty
+  Margin            Static
+  LeftMargin        MMMMM
+  LatexType         Command
+  Align             Center
+  AlignPossible     Center
+
+  LabelFont
+    Color           Blue
+  EndFont
+End
+
 Style Address
   LabelType         No_Label
   LatexName         address
